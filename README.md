@@ -4,19 +4,23 @@ This project provides two Python scripts to **scrape TikTok videos by keyword** 
 
 ---
 
+## Note: Add your login cookies to all python files.
+
 ## 📁 Files Overview
 
 ### 1. `tiktok_extract_links.py`
 This script:
-- Scrapes TikTok search results for a list of keywords.
-- Extracts download URLs, video duration, names, and ranks.
+- Paste Your Downloaded Cookies Here First.
+- In Search Function you can add total_results as total videos per search.
+- You can add multiple keywords in keywords list.
 - Saves the structured video metadata into a JSON file: `tiktok_data.json`.
 
 ### 2. `tiktok_extract_data.py`
 This script:
-- Reads from `tiktok_data.json`.
+- Paste your Downloaded cookies here too.
+- It Will Read the `tiktok_data.json` video link and videoname.
 - Downloads all videos using multithreaded requests with retry logic.
-- Saves videos into the `Videos/` folder.
+- Saves all searched videos into the `Videos/` folder.
 
 ---
 
